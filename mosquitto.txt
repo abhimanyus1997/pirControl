@@ -1,0 +1,7 @@
+service mosquitto status
+
+mosquitto -v
+
+mosquitto_sub -t "topic/path"
+
+mosquitto_pub -t "topic/path" -m "message payload" -q 1 -r

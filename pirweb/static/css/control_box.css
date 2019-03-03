@@ -1,0 +1,13 @@
+.box{
+
+    width: 100px;
+
+    height: 100px;
+
+    position: relative;
+
+    margin: 200px auto 0;
+
+    background: yellowgreen;
+
+}

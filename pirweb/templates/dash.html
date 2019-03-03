@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pipe Inspection Robot Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- FAVICON-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+
+    <!-- CUSTOM JAVASCRIPT -->
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/lib/dist/jquery.knob.min.js') }}"></script>
+</head>
+
+<body>
+
+    <div>
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+            <a class="navbar-brand" href="#">PIR Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('dashboard') }}" id="pir-home">Panel <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('sensor_data') }}">Sensors</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Performance
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ url_for('raspberry') }}">Raspberry Pi</a>
+                            <a class="dropdown-item" href="#">ESP32</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Other</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('myconsole') }}">Console</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Username" aria-label="Username">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit" id="pir-searchBtn">Login</button>
+                </form>
+            </div>
+        </nav>
+
+        <!--Speed Controllers-->
+        <div class="card-deck p-2">
+            <!--Speed Knob Card 1-->
+            <div class="card text-center text-white bg-dark mb-3 w-30">
+                <h6 class="card-header">PWM Speed 1</h6>
+                <div class="card-body">
+                    <h6 class="card-title text-muted">Select the speed of Motor 1</h6>
+                    <p class="card-text">
+                        <!--PWM Knob Selector using JQuery-->
+                        <input type="text" value="0" class="dial" data-angleArc="250" data-angleOffset="-125"
+                            data-step=".1" data-displayPrevious="true" data-width="100" data-fgColor="#f4417d">
+                    </p>
+                </div>
+            </div>
+
+
+            <!--Speed Knob Card 2-->
+            <div class="card text-center text-white bg-dark mb-3 w-30">
+                <h6 class="card-header">PWM Speed 2</h6>
+                <div class="card-body">
+                    <h6 class="card-title text-muted">Select the speed of Motor 2</h6>
+                    <p class="card-text">
+                        <!--PWM Knob Selector using JQuery-->
+                        <input type="text" value="0" class="dial" data-angleArc="250" data-angleOffset="-125"
+                            data-step=".1" data-displayPrevious="true" data-width="100" data-fgColor="#1976D2">
+                    </p>
+                </div>
+            </div>
+
+
+            <!--Speed Knob Card 3-->
+            <div class="card text-center text-white bg-dark mb-3 w-30">
+                <h6 class="card-header">PWM Speed 3</h6>
+                <div class="card-body">
+                    <h6 class="card-title text-muted">Select the speed of Motor 3</h6>
+                    <p class="card-text">
+                        <!--PWM Knob Selector using JQuery-->
+                        <input type="text" value="0" class="dial" data-angleArc="250" data-angleOffset="-125"
+                            data-step=".1" data-displayPrevious="true" data-width="100" data-fgColor="#ffde03">
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div>
+
+
+
+
+
+</body>
+
+</html>
