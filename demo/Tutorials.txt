@@ -1,0 +1,17 @@
+	BASIC FLASK SERVER
+https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
+
+	PSUTIL LIBRARY
+https://psutil.readthedocs.io/en/latest/
+
+	SOCKETIO
+https://www.shanelynn.ie/asynchronous-updates-to-a-webpage-with-flask-and-socket-io/
+https://github.com/miguelgrinberg/Flask-SocketIO
+https://flask-socketio.readthedocs.io/en/latest/
+
+
+	JQUERY
+https://www.tutorialspoint.com/jquery/
+
+	JQUERY KNOB PLUGIN
+https://github.com/aterrien/jQuery-Knob

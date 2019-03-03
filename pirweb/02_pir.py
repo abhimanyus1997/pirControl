@@ -1,3 +1,7 @@
+#Created by Abhimanyu Singh 
+#Contact abhimanyus1997@gmail.com
+#All rights reserved © 2019 Abhimanyu Singh
+
 import socket, psutil, os
 
 from flask import Flask, redirect, request, url_for, render_template
